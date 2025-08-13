@@ -3,6 +3,8 @@
 load("@bazel_skylib//rules:write_file.bzl", "write_file")
 load("@capnp-cpp//src/capnp:capnp_gen.bzl", "capnp_gen", _capnp_provider = "capnp_provider")
 load("@rules_rust//rust:defs.bzl", "rust_library")
+load("@rules_rust//crate_universe:defs.bzl", "crates_vendor")
+
 
 capnp_provider = _capnp_provider
 
